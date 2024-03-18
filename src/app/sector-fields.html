@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+  <br>
+  <label for="sectors">Sectors:</label>
+  <select multiple size="5" id="sectors" name="sectors" [(ngModel)]="formData.sectors">
+      <option *ngFor="let sector of sectors" [ngValue]="sector.value" [innerHTML]="sector.label"></option>
+  </select>
+  <br>
+  <input type="checkbox" id="agree" name="agree" [(ngModel)]="formData.agree">
+  <label for="agree">Agree to terms</label>
+  <br>
+  <br>
+  <button type="submit" [disabled]="!isValidForm()">Save</button>
+</form>
