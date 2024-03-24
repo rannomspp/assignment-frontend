@@ -1,6 +1,6 @@
 # README
 
-## Esimesena jooksutada backend moodul [assignment-app](https://github.com/rannomspp/assignment-app)
+## Esimesena on vaja jooksutada backend moodul [assignment-app](https://github.com/rannomspp/assignment-app)
 
 **Node versioon**
 
